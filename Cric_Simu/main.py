@@ -59,7 +59,7 @@ class MatchDay:
                     if delivery != 'NB' or delivery != 'WD':
                         prev_delivery = None
 
-                print(f"Over {over+1}.{j}: {strike} faces {baller} - {delivery}")
+                print(f"Over {over}.{j}: {strike} faces {baller} - {delivery}")
 
                 if delivery == 'WD':  # wide delivery
                     j -= 1
@@ -102,7 +102,7 @@ class MatchDay:
 
 
             strike, non_strike = non_strike, strike  # changing strike after every over
-            print(f"End of over {over+1}: {batting_team} - {total_runs}/{up_coming_batsman-2}")
+            print(f"End of over {over}: {batting_team} - {total_runs}/{up_coming_batsman-2}")
             balling_team_timeline[baller][0] += 1
             prev_baller = baller
             over += 1
